@@ -4,10 +4,9 @@ require 'validator'
 module Validator
   class CLI < Thor
 
-    desc "validate", "Determines if a sudoku grid is valid or invalid"
-    method_option :filename
-    def validate(filename)
-      puts Validator::Validate.validate(options[:filename])
+    desc "validate_grid ITEM", "Determines if a sudoku grid is valid or invalid"
+    def validate_grid(filename)
+      puts Validator::Validate.validate_grid(filename)
     end
   end
 end
