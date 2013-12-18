@@ -3,7 +3,7 @@ require 'validator'
 describe Validator::Validate do
 
   describe '#validate_grid' do
-    subject { Validator::Validate.validate_grid(filename)}
+    subject { Validator::Validate.validate(filename)}
     context "invalid, incomplete" do
       let(:filename){ 'invalid_incomplete.sudoku' }
       it { should == "This sudoku is invalid." }

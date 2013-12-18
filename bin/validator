@@ -1,0 +1,3 @@
+#!/user/bin/env ruby
+require 'validator/cli'
+Validator::CLI.start
