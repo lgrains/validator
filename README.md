@@ -1,6 +1,13 @@
 # Validator
 
-TODO: Write a gem description
+This gem validates sudoku grids.  A sudoku grid is a 9x9 grid such that each
+column, each row and each of the nine 3x3 grids that compose the grid contain
+all of the digits from 1 to 9.
+
+The gem provides three possible responses:
+The sudoku is valid.
+The sudoku is valid, but incomplete.
+The sudoku is invalid.
 
 ## Installation
 
@@ -18,7 +25,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To use the validator, enter the following at the command line:
+validator validate_grid path/to/file/containing_sudoku_grid
+
 
 ## Contributing
 
